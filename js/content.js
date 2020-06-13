@@ -1,5 +1,5 @@
-var app = angular.module('aery-app', ['ngSanitize']);
-app.controller('aery-controller', function($scope, $http){
+var app = angular.module('nope-app', ['ngSanitize']);
+app.controller('nope-controller', function($scope, $http){
 
 
 
