@@ -13,7 +13,6 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/sheets.css" rel="stylesheet">
   <link href="css/nope.css" rel="stylesheet">
   
   <!-- Fonts -->
@@ -93,7 +92,7 @@
       <div class="row">
         <div class="col-lg-12 info-pane mx-auto">
           <h2>Join Us</h2>
-          <p class="lead">If you're interested in joining Nope, please <a href='https://docs.google.com/forms/d/1ohe6LgeQ95whTJ37lwBr78iFkiN8X88Op-IbpPyfPo0/edit'>fill out an application</a>. If you'd like to speak to our leadership for more information, feel free to contact us:</p>
+          <p class="lead">If you're interested in joining Nope, please <a href='https://docs.google.com/forms/d/e/1FAIpQLSdre5UkGqJ6Rj-dB1wy5_0rYLKQ8zLHNC6qQw4aj7-zOHC1LA/viewform?usp=pp_url' id="application-link">fill out an application</a>. If you'd like to speak to our leadership for more information, feel free to contact us:</p>
           <ul>
             <li>Spyder, GM — FakeDiscord#1234 on Discord</li>
             <li>Broductivity, Recruitment Officer — FakeDiscord#5678 on Discord</li>

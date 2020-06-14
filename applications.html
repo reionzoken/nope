@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Nope</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/applications.css" rel="stylesheet">
+  <link href="css/nope.css" rel="stylesheet">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
+
+
+
+
+
+  <!-- Include AngularJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>
+
+</head>
+
+<body id="page-top" ng-app="nope-app" ng-controller="nope-controller">
+
+
+  <div id="logo-banner">
+	<div id="logo-banner-2">
+  		<h1 id="logo-guild-name">Nope</h1>
+  		<p id="logo-server-faction">Faerlina • Horde</p>
+  	</div>
+  </div>
+
+
+
+
+  <section id="about" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <div class="card" ng-repeat="(app,val) in applications |  filter:{Closed:'!x'} | orderBy:'-Timestamp'" ng-if="val.Timestamp != ''">
+            <a class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseApp{{$index}}" role="button" aria-expanded="false" aria-controls="collapseApp{{$index}}">
+              <div>
+                <span class="discordTag">{{val.Q1}}</span> • {{val.Timestamp | date: 'MM-dd-yyyy • hh:mm a'}}
+              </div>
+            </a>
+            <div class="collapse" id="collapseApp{{$index}}">
+              <div class="card card-body">
+        
+        <strong>Discord tag</strong>
+        <p>{{val.Q1}}</p>
+
+        <strong>Do you have any issues making the raid times outlined on our website, for either group?</strong>
+        <p>{{val.Q2}}</p>
+        
+        <strong>Do you have a functioning microphone that you can use in Discord?</strong>
+        <p>{{val.Q3}}</p>
+        
+        <strong>What class(es) and role(s) are you applying as?</strong>
+        <p>{{val.Q4}}</p>
+        
+        <strong>Link your Warcraft Logs character page.</strong>
+        <p><a href="{{val.Q5}}">{{val.Q5}}</a></p>
+        
+        <strong>Provide a link to a screenshot of your UI during combat.</strong>
+        <p><a href="{{val.Q6}}">{{val.Q6}}</a></p>
+        
+        <strong>Why are you leaving your current guild?</strong>
+        <p>{{val.Q7}}</p>
+        
+        <strong>Do you have any references? Please provide contact information.</strong>
+        <p>{{val.Q8}}</p>
+        
+        <strong>What experience do you have with raiding in WoW?</strong>
+        <p>{{val.Q9}}</p>
+        
+        <strong>How do you feel about playing different specs/roles for your class?</strong>
+        <p>{{val.Q10}}</p>
+        
+        <strong>You may be asked to sit out on some encounters due to raid composition, gear, or skill level. How do you feel about this?</strong>
+        <p>{{val.Q11}}</p>
+        
+        <strong>What do you think your greatest strength is as a raider? What do you excel at, and how do you do it?</strong>
+        <p>{{val.Q12}}</p>
+        
+        <strong>What do you think your greatest weakness is as a raider? What do you do to try to compensate for this?</strong>
+        <p>{{val.Q13}}</p>
+                          
+              </div>
+            </div>
+
+           
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Bootstrap core JavaScript -->
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+  <!-- JavaScript to generate page content -->
+  <script src="js/content.js"></script>
+
+</body>
+
+</html>

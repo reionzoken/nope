@@ -1,0 +1,12 @@
+.sheets-card-header {
+	color: white !important;
+	background-color: var(--dark-bg-color-2);
+	border-color: var(--main-bg-color);
+	text-align: left;
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+}
+
+.discordTag {
+	text-transform: initial;
+}
