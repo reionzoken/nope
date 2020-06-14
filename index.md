@@ -47,7 +47,7 @@
             <div class="collapse" id="collapseGamer">
               <div class="card card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Gamer'">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Gamer'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </li>
                 </ul>           
@@ -60,7 +60,7 @@
             <div class="collapse" id="collapseDragonslayer">
               <div class="card card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Dragonslayer'">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Dragonslayer'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </li>
                 </ul>           
@@ -73,7 +73,7 @@
             <div class="collapse" id="collapseSignups">
               <div class="card card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Signups'">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Signups'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </li>
                 </ul>           
@@ -86,7 +86,7 @@
             <div class="collapse" id="collapseResources">
               <div class="card card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Resources'">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Resources'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </li>
                 </ul>           
@@ -99,7 +99,7 @@
             <div class="collapse" id="collapsePVP">
               <div class="card card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'PVP'">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'PVP'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </li>
                 </ul>           
@@ -112,7 +112,7 @@
             <div class="collapse" id="collapseDruid">
               <div class="card card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Druid'">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Druid'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </li>
                 </ul>           
@@ -125,7 +125,7 @@
             <div class="collapse" id="collapseHunter">
               <div class="card card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Hunter'">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Hunter'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </li>
                 </ul>           
@@ -138,7 +138,7 @@
             <div class="collapse" id="collapseMage">
               <div class="card card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Mage'">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Mage'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </li>
                 </ul>           
@@ -151,7 +151,7 @@
             <div class="collapse" id="collapsePaladin">
               <div class="card card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Paladin'">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Paladin'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </li>
                 </ul>           
@@ -164,7 +164,7 @@
             <div class="collapse" id="collapsePriest">
               <div class="card card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Priest'">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Priest'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </li>
                 </ul>           
@@ -177,7 +177,7 @@
             <div class="collapse" id="collapseRogue">
               <div class="card card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Rogue'">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Rogue'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </li>
                 </ul>           
@@ -190,7 +190,7 @@
             <div class="collapse" id="collapseShaman">
               <div class="card card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Shaman'">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Shaman'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </li>
                 </ul>           
@@ -203,7 +203,7 @@
             <div class="collapse" id="collapseWarlock">
               <div class="card card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Warlock'">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Warlock'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </li>
                 </ul>           
@@ -216,7 +216,7 @@
             <div class="collapse" id="collapseWarrior">
               <div class="card card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Warrior'">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Warrior'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </li>
                 </ul>           

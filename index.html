@@ -40,250 +40,190 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 info-pane mx-auto">
-			<div class="card">
-				<div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseGamer" role="button" aria-expanded="false" aria-controls="collapseGamer">
-    				Gamer
-				</div>
-				<div class="collapse" id="collapseGamer">
-					<div class="card card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Gamer'">
-								<span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
+          <div class="card">
+            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseGamer" role="button" aria-expanded="false" aria-controls="collapseGamer">
+                Gamer
+            </div>
+            <div class="collapse" id="collapseGamer">
+              <div class="card card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Gamer'">
+                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
+                  </li>
+                </ul>           
+              </div>
+            </div>
 
-				<div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseDragonslayer" role="button" aria-expanded="false" aria-controls="collapseDragonslayer">
-    				Dragonslayer
-				</div>
-				<div class="collapse" id="collapseDragonslayer">
-					<div class="card card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Dragonslayer'">
-								<span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
+            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseDragonslayer" role="button" aria-expanded="false" aria-controls="collapseDragonslayer">
+                Dragonslayer
+            </div>
+            <div class="collapse" id="collapseDragonslayer">
+              <div class="card card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Dragonslayer'">
+                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
+                  </li>
+                </ul>           
+              </div>
+            </div>
 
-				<div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseSignups" role="button" aria-expanded="false" aria-controls="collapseSignups">
-    				Signups
-				</div>
-				<div class="collapse" id="collapseSignups">
-					<div class="card card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Signups'">
-								<span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
+            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseSignups" role="button" aria-expanded="false" aria-controls="collapseSignups">
+                Signups
+            </div>
+            <div class="collapse" id="collapseSignups">
+              <div class="card card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Signups'">
+                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
+                  </li>
+                </ul>           
+              </div>
+            </div>
 
-				<div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseResources" role="button" aria-expanded="false" aria-controls="collapseResources">
-    				Resources
-				</div>
-				<div class="collapse" id="collapseResources">
-					<div class="card card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Resources'">
-								<span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
+            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseResources" role="button" aria-expanded="false" aria-controls="collapseResources">
+                Resources
+            </div>
+            <div class="collapse" id="collapseResources">
+              <div class="card card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Resources'">
+                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
+                  </li>
+                </ul>           
+              </div>
+            </div>
 
-				<div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapsePVP" role="button" aria-expanded="false" aria-controls="collapsePVP">
-    				PVP
-				</div>
-				<div class="collapse" id="collapsePVP">
-					<div class="card card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'PVP'">
-								<span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
+            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapsePVP" role="button" aria-expanded="false" aria-controls="collapsePVP">
+                PVP
+            </div>
+            <div class="collapse" id="collapsePVP">
+              <div class="card card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'PVP'">
+                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
+                  </li>
+                </ul>           
+              </div>
+            </div>
 
-				<div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseDruid" role="button" aria-expanded="false" aria-controls="collapseDruid">
-    				Druid
-				</div>
-				<div class="collapse" id="collapseDruid">
-					<div class="card card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Druid'">
-								<span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
+            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseDruid" role="button" aria-expanded="false" aria-controls="collapseDruid">
+                Druid
+            </div>
+            <div class="collapse" id="collapseDruid">
+              <div class="card card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Druid'">
+                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
+                  </li>
+                </ul>           
+              </div>
+            </div>
 
-				<div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseHunter" role="button" aria-expanded="false" aria-controls="collapseHunter">
-    				Hunter
-				</div>
-				<div class="collapse" id="collapseHunter">
-					<div class="card card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Hunter'">
-								<span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
+            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseHunter" role="button" aria-expanded="false" aria-controls="collapseHunter">
+                Hunter
+            </div>
+            <div class="collapse" id="collapseHunter">
+              <div class="card card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Hunter'">
+                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
+                  </li>
+                </ul>           
+              </div>
+            </div>
 
-				<div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseMage" role="button" aria-expanded="false" aria-controls="collapseMage">
-    				Mage
-				</div>
-				<div class="collapse" id="collapseMage">
-					<div class="card card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Mage'">
-								<span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
+            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseMage" role="button" aria-expanded="false" aria-controls="collapseMage">
+                Mage
+            </div>
+            <div class="collapse" id="collapseMage">
+              <div class="card card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Mage'">
+                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
+                  </li>
+                </ul>           
+              </div>
+            </div>
 
-				<div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapsePaladin" role="button" aria-expanded="false" aria-controls="collapsePaladin">
-    				Paladin
-				</div>
-				<div class="collapse" id="collapsePaladin">
-					<div class="card card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Paladin'">
-								<span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
+            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapsePaladin" role="button" aria-expanded="false" aria-controls="collapsePaladin">
+                Paladin
+            </div>
+            <div class="collapse" id="collapsePaladin">
+              <div class="card card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Paladin'">
+                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
+                  </li>
+                </ul>           
+              </div>
+            </div>
 
-				<div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapsePriest" role="button" aria-expanded="false" aria-controls="collapsePriest">
-    				Priest
-				</div>
-				<div class="collapse" id="collapsePriest">
-					<div class="card card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Priest'">
-								<span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
+            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapsePriest" role="button" aria-expanded="false" aria-controls="collapsePriest">
+                Priest
+            </div>
+            <div class="collapse" id="collapsePriest">
+              <div class="card card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Priest'">
+                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
+                  </li>
+                </ul>           
+              </div>
+            </div>
 
-				<div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseRogue" role="button" aria-expanded="false" aria-controls="collapseRogue">
-    				Rogue
-				</div>
-				<div class="collapse" id="collapseRogue">
-					<div class="card card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Rogue'">
-								<span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
+            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseRogue" role="button" aria-expanded="false" aria-controls="collapseRogue">
+                Rogue
+            </div>
+            <div class="collapse" id="collapseRogue">
+              <div class="card card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Rogue'">
+                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
+                  </li>
+                </ul>           
+              </div>
+            </div>
 
-				<div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseShaman" role="button" aria-expanded="false" aria-controls="collapseShaman">
-    				Shaman
-				</div>
-				<div class="collapse" id="collapseShaman">
-					<div class="card card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Shaman'">
-								<span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
+            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseShaman" role="button" aria-expanded="false" aria-controls="collapseShaman">
+                Shaman
+            </div>
+            <div class="collapse" id="collapseShaman">
+              <div class="card card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Shaman'">
+                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
+                  </li>
+                </ul>           
+              </div>
+            </div>
 
-				<div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseWarlock" role="button" aria-expanded="false" aria-controls="collapseWarlock">
-    				Warlock
-				</div>
-				<div class="collapse" id="collapseWarlock">
-					<div class="card card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Warlock'">
-								<span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
+            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseWarlock" role="button" aria-expanded="false" aria-controls="collapseWarlock">
+                Warlock
+            </div>
+            <div class="collapse" id="collapseWarlock">
+              <div class="card card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Warlock'">
+                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
+                  </li>
+                </ul>           
+              </div>
+            </div>
 
-				<div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseWarrior" role="button" aria-expanded="false" aria-controls="collapseWarrior">
-    				Warrior
-				</div>
-				<div class="collapse" id="collapseWarrior">
-					<div class="card card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item" ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Warrior'">
-								<span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-							</li>
-						</ul>						
-					</div>
-				</div>
+            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseWarrior" role="button" aria-expanded="false" aria-controls="collapseWarrior">
+                Warrior
+            </div>
+            <div class="collapse" id="collapseWarrior">
+              <div class="card card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Warrior'">
+                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
+                  </li>
+                </ul>           
+              </div>
+            </div>
 
-			</div>
-
-<!-- 
-
-
-          <h2>Gamer</h2>
-          <div ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Gamer'">
-            <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
           </div>
-          <h2>Dragonslayer</h2>
-          <div ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Dragonslayer'">
-            <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-          </div>
-          <h2>Raid Signups</h2>
-          <div ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Raid Signups'">
-            <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-          </div>
-          <h2>PVP</h2>
-          <div ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'PVP'">
-            <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-          </div>
-          <h2>Resources</h2>
-          <div ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Resources'">
-            <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-          </div>
-          <h2>Druid</h2>
-          <div ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Druid'">
-            <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-          </div>
-          <h2>Hunter</h2>
-          <div ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Hunter'">
-            <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-          </div>
-          <h2>Mage</h2>
-          <div ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Mage'">
-            <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-          </div>
-          <h2>Paladin</h2>
-          <div ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Paladin'">
-            <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-          </div>
-          <h2>Priest</h2>
-          <div ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Priest'">
-            <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-          </div>
-          <h2>Rogue</h2>
-          <div ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Rogue'">
-            <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-          </div>
-          <h2>Shaman</h2>
-          <div ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Shaman'">
-            <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-          </div>
-          <h2>Warlock</h2>
-          <div ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Warlock'">
-            <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-          </div>
-          <h2>Warrior</h2>
-          <div ng-repeat="(entry,val) in sheets" ng-if="val.Category == 'Warrior'">
-            <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-          </div> -->
         </div>
       </div>
     </div>
@@ -302,12 +242,12 @@
       </div>
     </footer> 
   <!-- Bootstrap core JavaScript -->
-  	<script
+    <script
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
