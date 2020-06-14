@@ -184,8 +184,7 @@ p {
 }
 
 #logo-banner-2 {
-    padding-top: 2.5em;
-    padding-bottom: 0.2em;
+    padding-top: 1.7em;
     margin-bottom: 0.5em;
 }
 
@@ -194,6 +193,7 @@ p {
     font-family: anotherDanger;
     text-shadow: 0.03em 0.03em 0px #ffffff;
     font-size: 8em;
+    margin-bottom: -0.05em;
 }
 
 #logo-server-faction {
