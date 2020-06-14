@@ -8,6 +8,7 @@
     --bg-color: #941010;
     --bg-color-2: #b90000;
     --background-url: url("../img/top-banner-orc-warrior.jpg");
+    --main-font: font-family: 'Catamaran', sans-serif;
 }
 
 @font-face {
@@ -17,23 +18,45 @@
 
 
 a, a:visited {
-    color: var(--link-color);
-    font-family: 'Catamaran', sans-serif;
+    color: var(--link-color) ;
+    font-family: var(--main-font);
     text-transform: uppercase;
     font-weight: 300;
+    text-decoration: none !important;
 }
 
-a:hover, a:focused, a:active {
-    color: var(--link-hover);
-    text-decoration: none;
+a:hover {
+    color: var(--link-hover) !important;
+    text-decoration: none !important;
+	text-shadow: 2px 2px 1px var(--link-color);
+}
+
+a:focused {
+    color: var(--link-hover) !important;
+    text-decoration: none !important;
+	text-shadow: 2px 2px 1px var(--link-color);
+}
+
+a:active {
+    color: var(--link-hover) !important;
+    text-decoration: none !important;
+	text-shadow: 2px 2px 1px var(--link-color);
+}
+
+h1, h2, h3, h4, h5 {
+	font-variant: small-caps;
+	font-weight: 500;
+	color: white;
+	text-shadow: 3px 2px 0px #b90000;
 }
 
 html, header, body, footer{ 
     background-color: var(--main-bg-color);
+    color: white;
 }
 
 p { 
-    font-family: 'Catamaran', sans-serif;
+    font-family: var(--main-font);
 }
 
 
@@ -60,9 +83,97 @@ p {
     background-color: var(--dark-bg-color-3);
 }
 
+.class-name {
+	font-size: 1.1em;	
+	text-transform: uppercase;
+}
+
+.class-icon {
+	max-height: 1.75rem; !important;
+	margin-right: 5px;
+	margin-top: -5px;
+}
+
+.footer-icon {
+	height: 30px;
+	margin-right: 5px;
+}
+
+.footer-link {
+	color: var(--link-color) !important;
+	padding: 1em;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+}
+
+.highlight {
+	color: #fff200;
+}
+
+.info-pane {
+	margin-top: 1.5vh;
+	margin-bottom: 1.5vh;
+	padding: 2vw;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	background: var(--dark-bg-color);
+	color: #fff;
+	box-shadow: 0px 0px 5px #000;
+    border: 1px solid var(--dark-bg-color-2);
+    border-radius: 10px;
+    z-index: 1;
+}
+
 .ng-binding:hover, .ng-binding:focus, .ng-binding:active {
     color: var(--link-hover);
     text-decoration: none;
+}
+
+.progression-bar {
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+    font-family: var(--main-font);
+	font-variant: small-caps;
+	color: #fff;
+	text-shadow: 1px 0px 1px #000;
+	text-shadow: 1px 0px 2px #000;
+	text-shadow: 1px 0px 3px #000;
+	text-align: center;
+	max-width: calc(100%);
+	box-shadow: 0px 10px 25px rgba(0, 0, 0, .66);
+	border: 2px solid rgba(0, 0, 0, 0.66);
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0.75em;
+}
+
+.progression-bar:nth-child(even) {
+	background-position: left top;
+}
+
+.progression-bar:nth-child(odd) {
+	background-position: right top;
+}
+
+.progression-bar span {
+	font-size: 1.6em;
+}
+
+.progression-heading {
+	margin-top: 40px;
+}
+
+.spec-icon {
+	height: 1.5em;
+}
+
+#footer-section {
+	text-align: center;
+	font-family: var(--main-font);
+    font-variant: small-caps;
+	text-shadow: 0px 0px 5px #000, 0px 0px 3px #000;
 }
 
 #logo-banner {
@@ -73,22 +184,74 @@ p {
 }
 
 #logo-banner-2 {
-	background-color: #00000036;
-    padding-top: 4em;
-    padding-bottom: 2em;
-    margin-bottom: 1em;
+    padding-top: 2.5em;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.5em;
 }
 
 #logo-guild-name {
     color: #ff0000;
     font-family: anotherDanger;
     text-shadow: 0.03em 0.03em 0px #ffffff;
-    font-size: 6em;
+    font-size: 8em;
 }
 
 #logo-server-faction {
     color: #fff;
-    font-family: 'Catamaran', sans-serif;
+    text-shadow: 2px 2px 0px #000000;
+    font-family: var(--main-font);
     text-transform: uppercase;
     font-size: 1.25em;
+    font-weight: 100;
+}
+
+#raid-0-progression {
+	background-image: url("../img/molten-core-1.png");
+}
+#raid-1-progression {
+	background-image: url("../img/onyxia.png");
+}
+#raid-2-progression {
+	background-image: url("../img/blackwing-lair.png");
+}
+#raid-3-progression {
+	background-image: url("../img/zul-gurub.png");
+}
+#raid-4-progression {
+	background-image: url("../img/aq20.png");
+}
+#raid-5-progression {
+	background-image: url("../img/aq40.png");
+}
+#raid-6-progression {
+	background-image: url("../img/naxxramas.png");
+}
+
+
+
+
+
+.Druid-color { 
+	color: #FF7D0A;
+}
+.Hunter-color { 
+	color: #ABD473;
+}
+.Mage-color { 
+	color: #69CCF0;
+}
+.Priest-color { 
+	color: #FFFFFF;
+}
+.Rogue-color { 
+	color: #FFF569;
+}
+.Shaman-color { 
+	color: #0070DE;
+}
+.Warlock-color { 
+	color: #9482C9;
+}
+.Warrior-color { 
+	color: #C79C6E;
 }

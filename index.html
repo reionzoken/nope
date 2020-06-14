@@ -37,8 +37,10 @@
 
 
   <div id="logo-banner">
-  	<h1 id="logo-guild-name">Nope</h1>
-  	<p id="logo-server-faction">Faerlina | Horde</p>
+	<div id="logo-banner-2">
+  		<h1 id="logo-guild-name">Nope</h1>
+  		<p id="logo-server-faction">Faerlina • Horde</p>
+  	</div>
   </div>
 
 
@@ -47,203 +49,75 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 info-pane mx-auto">
-          <div class="card">
-            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseGamer" role="button" aria-expanded="false" aria-controls="collapseGamer">
-                Gamer
-            </div>
-            <div class="collapse" id="collapseGamer">
-              <div class="card card-body">
-                
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Gamer'">
-                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-                  </div>
-                          
-              </div>
-            </div>
-
-            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseDragonslayer" role="button" aria-expanded="false" aria-controls="collapseDragonslayer">
-                Dragonslayer
-            </div>
-            <div class="collapse" id="collapseDragonslayer">
-              <div class="card card-body">
-                
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Dragonslayer'">
-                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-                  </div>
-                          
-              </div>
-            </div>
-
-            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseSignups" role="button" aria-expanded="false" aria-controls="collapseSignups">
-                Signups
-            </div>
-            <div class="collapse" id="collapseSignups">
-              <div class="card card-body">
-                
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Signups'">
-                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-                  </div>
-                          
-              </div>
-            </div>
-
-            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseResources" role="button" aria-expanded="false" aria-controls="collapseResources">
-                Resources
-            </div>
-            <div class="collapse" id="collapseResources">
-              <div class="card card-body">
-                
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Resources'">
-                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-                  </div>
-                          
-              </div>
-            </div>
-
-            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapsePVP" role="button" aria-expanded="false" aria-controls="collapsePVP">
-                PVP
-            </div>
-            <div class="collapse" id="collapsePVP">
-              <div class="card card-body">
-                
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'PVP'">
-                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-                  </div>
-                          
-              </div>
-            </div>
-
-            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseDruid" role="button" aria-expanded="false" aria-controls="collapseDruid">
-                Druid
-            </div>
-            <div class="collapse" id="collapseDruid">
-              <div class="card card-body">
-                
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Druid'">
-                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-                  </div>
-                          
-              </div>
-            </div>
-
-            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseHunter" role="button" aria-expanded="false" aria-controls="collapseHunter">
-                Hunter
-            </div>
-            <div class="collapse" id="collapseHunter">
-              <div class="card card-body">
-                
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Hunter'">
-                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-                  </div>
-                          
-              </div>
-            </div>
-
-            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseMage" role="button" aria-expanded="false" aria-controls="collapseMage">
-                Mage
-            </div>
-            <div class="collapse" id="collapseMage">
-              <div class="card card-body">
-                
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Mage'">
-                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-                  </div>
-                          
-              </div>
-            </div>
-
-            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapsePaladin" role="button" aria-expanded="false" aria-controls="collapsePaladin">
-                Paladin
-            </div>
-            <div class="collapse" id="collapsePaladin">
-              <div class="card card-body">
-                
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Paladin'">
-                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-                  </div>
-                          
-              </div>
-            </div>
-
-            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapsePriest" role="button" aria-expanded="false" aria-controls="collapsePriest">
-                Priest
-            </div>
-            <div class="collapse" id="collapsePriest">
-              <div class="card card-body">
-                
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Priest'">
-                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-                  </div>
-                          
-              </div>
-            </div>
-
-            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseRogue" role="button" aria-expanded="false" aria-controls="collapseRogue">
-                Rogue
-            </div>
-            <div class="collapse" id="collapseRogue">
-              <div class="card card-body">
-                
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Rogue'">
-                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-                  </div>
-                          
-              </div>
-            </div>
-
-            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseShaman" role="button" aria-expanded="false" aria-controls="collapseShaman">
-                Shaman
-            </div>
-            <div class="collapse" id="collapseShaman">
-              <div class="card card-body">
-                
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Shaman'">
-                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-                  </div>
-                          
-              </div>
-            </div>
-
-            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseWarlock" role="button" aria-expanded="false" aria-controls="collapseWarlock">
-                Warlock
-            </div>
-            <div class="collapse" id="collapseWarlock">
-              <div class="card card-body">
-                
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Warlock'">
-                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-                  </div>
-                          
-              </div>
-            </div>
-
-            <div class="card-header btn btn-primary sheets-card-header" data-toggle="collapse" href="#collapseWarrior" role="button" aria-expanded="false" aria-controls="collapseWarrior">
-                Warrior
-            </div>
-            <div class="collapse" id="collapseWarrior">
-              <div class="card card-body">
-                
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Warrior'">
-                    <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
-                  </div>
-                          
-              </div>
-            </div>
-
+          <h2>About Us</h2>
+          <p class="lead">Nope is a hardcore Horde guild on Faerlina, founded on <span class="highlight">?/?/????</span>. We are a friendly group of passionate and driven WoW players who wish to experience Classic WoW to its fullest as a team.</p>
+          <ul>
+            <li>Accomplishment 1</li>
+            <li>Accomplishment 1</li>
+            <li>Accomplishment 1</li>
+          </ul>
+          <h2>Raid Times</h2>
+          <p class="lead">Our guild currently runs two raid groups.</p>
+          <ul>
+            <li>Gamers — Monday/Thursday @ 7 PM Eastern, every other week, covering each lockout </li>
+            <li>Dragonslayers — Friday/Sunday @ 7 PM Eastern </li>
+          </ul>
+          <h2>What You Can Expect From Us</h2>
+          <ul>
+            <li>A friendly, passionate, and experienced community to collaborate with through the Classic WoW experience</li>
+            <li>A fun and competitive raiding environment</li>
+            <li>A large roster of over 80 raiders to foster competition</li>
+            <li>Loot council where loot is rewarded based upon progression needs and performance as opposed to seniority and favoritism</li>
+            <li>New members will be integrated into the roster as soon as possible in order to prove their merit and demonstrate what they can bring to our team</li>
+            <li>An active community outside of raid hours</li>
+          </ul>
+          <h2>What We Expect From You</h2>
+          <ul>
+            <li><strong>Great Attitude:</strong> We're looking for players who are mature, respectful, and value integrity. We have zero tolerance for disrespectful or toxic individuals.</li>
+            <li><strong>A Team-Oriented Mindset:</strong> We want players who value the success of the guild over their own parse or personal gain, even if it means stepping into a different role or handling undesirable boss mechanics.</li>
+            <li><strong>Preparation:</strong> As part of respecting each other's time, we expect our raiders to be prepared when they show up for raid nights. This means doing research in advance for upcoming progression, having the proper add-ons and WeakAuras, and carrying proper consumables and gear.</li>
+            <li><strong>Desire to Excel:</strong> We're not looking for players who are satisfied with the bare minimum. We're looking for players who are willing to go above and beyond at understanding their class and the raid encounters. We want players who are eager to improve their performance from raid to raid.</li>
+            <li><strong>Consistent Attendance:</strong> We only raid two nights per week, so it is important for people to show up to our raids nearly 100% of the time. We understand that real life happens, but we can't rely on people who are consistently late or absent.</li>
+          </ul>
+          <h2>Speed Rankings</h2>
+          <div ng-repeat="(raid,val) in times" ng-if="val.Speed != 0" id="raid-{{$index}}-progression" class="progression-bar">
+            <span>{{val.Raid}} — {{val.Speed}}</span><span ng-if="val.Rank !=''"> — Rank {{val.Rank}} Horde</span><span ng-if="val.Note !=''">, {{val.Note}}</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
+  <section id="join" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 info-pane mx-auto">
+          <h2>Join Us</h2>
+          <p class="lead">If you're interested in joining Nope, please <a href='https://docs.google.com/forms/d/1ohe6LgeQ95whTJ37lwBr78iFkiN8X88Op-IbpPyfPo0/edit'>fill out an application</a>. If you'd like to speak to our leadership for more information, feel free to contact us:</p>
+          <ul>
+            <li>Spyder, GM — FakeDiscord#1234 on Discord</li>
+            <li>Broductivity, Recruitment Officer — FakeDiscord#5678 on Discord</li>
+          </ul>
+          <h4>Recruiting Needs</h4>
+          <p  class="lead" ng-if="recruitment[8].Recruiting == 'true'">At the moment, we are currently seeking the following classes:</p>
+          <div id="recruitment-needs">
+          <p class="recruitment-string" ng-repeat="(class,val) in recruitment | filter:{Class:'!Recruiting'}" ng-if="val.Recruiting == 'true' && recruitment[8].Recruiting == 'true'"><img class="class-icon" src="img/{{val.Class}}-icon.png"><span class="{{val.Class}}-color class-name">{{val.Class}}</span><span ng-if="val.Note != ''"> — {{val.Note}}</span></p>
+          <p class="lead" ng-if="recruitment[8].Recruiting == 'true'">We are always looking for exceptional players, who are passionate and push themselves to be the best. If your class is not listed and you consider yourself exceptional, I would urge you to still apply. </p>
+          <p class="lead" ng-if="recruitment[8].Recruiting == 'false'">We aren't recruiting any specific classes at the moment, but if you consider yourself to be an exceptional player, we would love to hear from you.</p>
+          </div>
+      </div>
+    </div>
+  </section>
 
 
 
     <footer class="py-3 bg-dark">
       <div class="container">
         <div class="row" id="footer-section">
-          <div class="col-lg-12 mx-auto">       
+          <div class="col-lg-12 mx-auto">
+            <a class="footer-link js-scroll-trigger" href="https://www.youtube.com/user/Nope-guild/videos" target="_blank"><img class="footer-icon" src="img/youtube-icon.png">Youtube</a>
+            <a class="footer-link js-scroll-trigger" href="https://discord.gg/2BkTKg" target="_blank"><img class="footer-icon" src="img/discord-icon.png">Discord</a>
+            <a class="footer-link js-scroll-trigger" href="https://classic.warcraftlogs.com/guild/calendar/479945/" target="_blank"><img class="footer-icon" src="img/warcraftlogs-icon.png">Logs</a>          
           </div>
         </div>
       </div>
