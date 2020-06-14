@@ -1,80 +1,12 @@
-:root {
-    --main-bg-color: black;
-    --dark-bg-color: #181818;
-    --dark-bg-color-2: #202020;
-    --dark-bg-color-3: #300808;
-    --link-color: #ff0000;
-    --link-hover: #ffffff;
-    --bg-color: #941010;
-    --bg-color-2: #b90000;
-}
-
-@font-face {
-    font-family: anotherDanger;
-    src: url(../fonts/Another_Danger_Slanted.otf)
-}
-
-
-a, a:visited {
-    color: var(--link-color);
+.sheets-card-header {
+	color: white !important;
+	background-color: var(--dark-bg-color-2);
+	border-color: var(--main-bg-color);
+	text-align: left;
     font-family: 'Catamaran', sans-serif;
     text-transform: uppercase;
-    font-weight: 300;
 }
 
-a:hover, a:focused, a:active {
-    color: var(--link-hover);
-    text-decoration: none;
-}
-
-html, header, body, footer{ 
-    background-color: var(--main-bg-color);
-}
-
-p { 
-    font-family: 'Catamaran', sans-serif;
-}
-
-
-.bg-dark {
-    background-color: var(--main-bg-color) !important;
-}
-
-.btn {
-    background-color: var(--bg-color);
-}
-
-.btn:hover, .btn:focus, .btn:active {
-    background-color: var(--bg-color-2) !important;
-    border-color: black !important;
-}
-
-.card {
-    background-color: var(--dark-bg-color-3);
-}
-
-.ng-binding:hover {
-    color: var(--link-hover);
-    text-decoration: none;
-}
-
-#logo-banner {
-    background-color: black;
-    text-align: center;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-}
-
-#logo-guild-name {
-    color: #ff0000;
-    font-family: anotherDanger;
-    text-shadow: 0.03em 0.03em 0px #ffffff;
-    font-size: 6em;
-}
-
-#logo-server-faction {
-    color: #fff;
-    font-family: 'Catamaran', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.25em;
+.sheet-info {
+	color: white;
 }
