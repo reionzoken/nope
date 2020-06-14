@@ -49,11 +49,17 @@ p {
     border-color: black !important;
 }
 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: var(--bg-color-2) !important;
+    border-color: black !important;
+    box-shadow: 0 0 0 0.1rem rgba(70, 255, 0, 0) !important;
+}
+
 .card {
     background-color: var(--dark-bg-color-3);
 }
 
-.ng-binding:hover {
+.ng-binding:hover, .ng-binding:focus, .ng-binding:active {
     color: var(--link-hover);
     text-decoration: none;
 }
