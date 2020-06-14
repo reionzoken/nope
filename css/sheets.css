@@ -1,7 +1,12 @@
 .sheets-card-header {
 	color: white;
-	background-color: #656565;
-	border-color: black;
+	background-color: var(--dark-bg-color-2);
+	border-color: var(--main-bg-color);
 	text-align: left;
-	font-weight: bold;
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+}
+
+.sheet-info {
+	color: white;
 }
