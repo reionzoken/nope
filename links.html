@@ -54,7 +54,7 @@
             <div class="collapse" id="collapseGamer">
               <div class="card card-body">
                 
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Gamer'">
+                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | filter:{Category:'Gamer'} | orderBy:'Name'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </div>
                           
@@ -68,7 +68,7 @@
             <div class="collapse" id="collapseDragonslayer">
               <div class="card card-body">
                 
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Dragonslayer'">
+                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | filter:{Category:'Dragonslayer'} | orderBy:'Name'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </div>
                           
@@ -82,7 +82,7 @@
             <div class="collapse" id="collapseSignups">
               <div class="card card-body">
                 
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Signups'">
+                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | filter:{Category:'Signups'} | orderBy:'Name'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </div>
                           
@@ -96,7 +96,7 @@
             <div class="collapse" id="collapseResources">
               <div class="card card-body">
                 
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Resources'">
+                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | filter:{Category:'Resources'} | orderBy:'Name'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </div>
                           
@@ -110,7 +110,7 @@
             <div class="collapse" id="collapsePVP">
               <div class="card card-body">
                 
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'PVP'">
+                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | filter:{Category:'PVP'} | orderBy:'Name'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </div>
                           
@@ -124,7 +124,7 @@
             <div class="collapse" id="collapseDruid">
               <div class="card card-body">
                 
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Druid'">
+                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | filter:{Category:'Druid'} | orderBy:'Name'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </div>
                           
@@ -138,7 +138,7 @@
             <div class="collapse" id="collapseHunter">
               <div class="card card-body">
                 
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Hunter'">
+                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | filter:{Category:'Hunter'} | orderBy:'Name'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </div>
                           
@@ -152,7 +152,7 @@
             <div class="collapse" id="collapseMage">
               <div class="card card-body">
                 
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Mage'">
+                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | filter:{Category:'Mage'} | orderBy:'Name'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </div>
                           
@@ -166,7 +166,7 @@
             <div class="collapse" id="collapsePaladin">
               <div class="card card-body">
                 
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Paladin'">
+                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | filter:{Category:'Paladin'} | orderBy:'Name'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </div>
                           
@@ -180,7 +180,7 @@
             <div class="collapse" id="collapsePriest">
               <div class="card card-body">
                 
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Priest'">
+                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | filter:{Category:'Priest'} | orderBy:'Name'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </div>
                           
@@ -194,7 +194,7 @@
             <div class="collapse" id="collapseRogue">
               <div class="card card-body">
                 
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Rogue'">
+                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | filter:{Category:'Rogue'} | orderBy:'Name'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </div>
                           
@@ -208,7 +208,7 @@
             <div class="collapse" id="collapseShaman">
               <div class="card card-body">
                 
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Shaman'">
+                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | filter:{Category:'Shaman'} | orderBy:'Name'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </div>
                           
@@ -222,7 +222,7 @@
             <div class="collapse" id="collapseWarlock">
               <div class="card card-body">
                 
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Warlock'">
+                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | filter:{Category:'Warlock'} | orderBy:'Name'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </div>
                           
@@ -236,7 +236,7 @@
             <div class="collapse" id="collapseWarrior">
               <div class="card card-body">
                 
-                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | orderBy:'Name'" ng-if="val.Category == 'Warrior'">
+                  <div class="sheet-info" ng-repeat="(entry,val) in sheets | filter:{Category:'Warrior'} | orderBy:'Name'">
                     <span><strong><a href="{{val.URL}}">{{val.Name}}</a></strong></span><p>{{val.Description}}</p>
                   </div>
                           

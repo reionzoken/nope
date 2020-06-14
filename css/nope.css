@@ -53,6 +53,11 @@ p {
     background-color: var(--dark-bg-color-3);
 }
 
+.ng-binding:hover {
+    color: var(--link-hover);
+    text-decoration: none;
+}
+
 #logo-banner {
     background-color: black;
     text-align: center;
