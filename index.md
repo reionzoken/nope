@@ -53,8 +53,8 @@
           <p class="lead">Nope is a hardcore Horde guild on Faerlina, founded on <span class="highlight">?/?/????</span>. We are a friendly group of passionate and driven WoW players who wish to experience Classic WoW to its fullest as a team.</p>
           <ul>
             <li>Accomplishment 1</li>
-            <li>Accomplishment 1</li>
-            <li>Accomplishment 1</li>
+            <li>Accomplishment 2</li>
+            <li>Accomplishment 3</li>
           </ul>
           <h2>Raid Times</h2>
           <p class="lead">Our guild currently runs two raid groups.</p>
