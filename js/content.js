@@ -6,7 +6,7 @@ app.controller('nope-controller', function($scope, $http){
   
   $http({
     method: "GET",
-    url: "https://spreadsheets.google.com/feeds/cells/1-PraHY5Y4IBOdcFzXykeNWdEdQ0nGFWDG0AKBpTLLGw/6/public/values?alt=json"
+    url: "https://spreadsheets.google.com/feeds/cells/1-PraHY5Y4IBOdcFzXykeNWdEdQ0nGFWDG0AKBpTLLGw/2/public/values?alt=json"
   }).then(function (response){
     $scope.sheets = response.data;
     $scope.sheets = JSON.parse($scope.sheets["feed"]["entry"][0]["content"]["$t"]);
