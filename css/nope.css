@@ -15,14 +15,14 @@
 }
 
 
-a {
+a, a:visited {
     color: var(--link-color);
     font-family: 'Catamaran', sans-serif;
     text-transform: uppercase;
     font-weight: 300;
 }
 
-a:hover {
+a:hover, a:focused, a:active {
     color: var(--link-hover);
     text-decoration: none;
 }

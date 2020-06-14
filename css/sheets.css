@@ -1,5 +1,5 @@
 .sheets-card-header {
-	color: white;
+	color: white !important;
 	background-color: var(--dark-bg-color-2);
 	border-color: var(--main-bg-color);
 	text-align: left;
