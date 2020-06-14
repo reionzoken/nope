@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: black;
+    --main-bg-color: #080808;
     --dark-bg-color: #181818;
     --dark-bg-color-2: #202020;
     --dark-bg-color-3: #300808;
@@ -7,6 +7,7 @@
     --link-hover: #ffffff;
     --bg-color: #941010;
     --bg-color-2: #b90000;
+    --background-url: url("../img/top-banner-orc-warrior.jpg");
 }
 
 @font-face {
@@ -65,10 +66,17 @@ p {
 }
 
 #logo-banner {
-    background-color: black;
+	background-image: var(--background-url);
+	background-position: 10% 10%;
+	background-size: cover;
     text-align: center;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+}
+
+#logo-banner-2 {
+	background-color: #00000036;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 #logo-guild-name {
